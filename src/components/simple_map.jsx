@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
+import API_KEY from '../../keys';
+
 const AnyReactComponent = ({ img }) => <div>{img}</div>;
 
 class SimpleMap extends Component {
@@ -18,7 +20,7 @@ class SimpleMap extends Component {
       // Important! Always set the container height explicitly
       <div className="map-container">
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyBs1kNypTnZwlf48DPOJvHcAzFxVBqjE94" }}
+          bootstrapURLKeys={{ key: API_KEY }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
@@ -39,7 +41,7 @@ class SimpleMap extends Component {
       // Important! Always set the container height explicitly
       <div className="map-container">
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyBs1kNypTnZwlf48DPOJvHcAzFxVBqjE94" }}
+          bootstrapURLKeys={{ key: API_KEY }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >

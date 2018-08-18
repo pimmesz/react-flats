@@ -7,6 +7,8 @@ import flats from '../../data/flats';
 import SimpleMap from './simple_map.jsx';
 import FlatList from './flats_list.jsx';
 
+console.log(process.env.REACT_APP_API_KEY)
+
 class App extends Component {
   constructor(props) {
     super(props);
